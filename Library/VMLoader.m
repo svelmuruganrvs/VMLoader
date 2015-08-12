@@ -45,8 +45,6 @@
     [parenttView addSubview:self];
     [parenttView addSubview:imageView];
     [VMLoader rotateLayerInfinite:imageView.layer];
-
-
 }
 -(void)hide
 {
@@ -71,21 +69,6 @@
     imageView.image = nil;
     imageView = nil;
 }
-//-(void)animation
-//{
-//    [UIView animateWithDuration:2.0 delay:.2 usingSpringWithDamping:1 initialSpringVelocity:1.0 options:0 animations:^{
-//
-//       CGRect optionsFrame = imageView.frame;
-//        optionsFrame.origin.x = 0;
-//        imageView.frame = optionsFrame;
-////        optionsFrame.origin.x = parenttView.bounds.size.width;
-////        imageView.frame = optionsFrame;
-//        [self updateFrame];
-//        
-//    } completion:^(BOOL finished) {
-//        
-//    }];
-//}
 -(void)updateFrame
 {
     self.frame = parenttView.frame;
